@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Bootstrap-modal by jschr</title>
+  <title>Dynamic Modal Corgs!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet" />
   <link href="http://getbootstrap.com/2.3.2/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
@@ -34,45 +34,38 @@
 	<div class="page-container">
     <div class="container" style="position: relative">
       <div class="marketing">
-        <h1>Bootstrap-Modal</h1>
-        <p class="muted">Responsive, Stackable, AJAX and more.</p>
-        <a 
-          class="twitter-share-button" 
-          href="https://twitter.com/share"
-          data-text="Bootstrap-Modal - Responsive, Stackable, AJAX and more."
-          data-url="http://jschr.github.io/bootstrap-modal/"
-          data-via="_jschr">
-          Tweet
-        </a>&nbsp;
-			  <iframe style="margin-top: 10px" src="http://ghbtns.com/github-btn.html?user=jschr&repo=bootstrap-modal&type=watch&count=true"
-	  allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
-			  <iframe style="margin-top: 10px" src="http://ghbtns.com/github-btn.html?user=jschr&repo=bootstrap-modal&type=fork&count=true"
-	  allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe>
+        <h1>Modal Corgs!</h1>
+        <p class="muted">Using jQuery to create dynamic modals</p>
+
       </div>
       <br />
 		  <div class="row">
 			  <div class="span10">
   				<p>
-            Using Bootstrap 3? Include the <a href="css/bootstrap-modal-bs3patch.css">patch file</a> <strong>before</strong> bootstrap-modal and check out the <a href="bs3.html">demo page</a>.
+            Welcome to your first javascript Code Fun times my fellow corglings. If you notice, each of these sections have a modal button within it. These buttons all open the same modal window. Your task is to use have the title and image added to the modal window based on the section using jQuery! Start you corg-wings and fly!
           </p>
-          <div class="responsive">
-  				  <h3>Responsive</h3>
-  				  <pre class="pre-scrollable prettyprint linenums" data-source="#responsive">
-  				  </pre>
-  				  <div class="text-center">
-  					<button class="demo btn btn-primary btn-large" data-toggle="modal" href="#responsive">View Demo</button>
-  				  </div>
-  				</div>
+          <div class="full-width" id="section-1" style="position: relative; overflow: hidden">
+            <h3>The First Section: Nerd Corg Study Up</h3>
+            <img src="img/nerd-corg.jpg">
+            <pre class="pre-scrollable prettyprint linenums" data-source="#full-width">
+            </pre>
+            <div class="text-center">
+            <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#full-width">View Demo</button>
+            </div>
+          </div>
+          <br />
   				<br />
 
-  				<div class="stackable">
-  				  <h3>Stackable</h3>
-  				  <pre class="pre-scrollable prettyprint linenums" data-source="#stack1, #stack2, #stack3">         
-  				  </pre>
-  				  <div class="text-center">
-  					<button class="demo btn btn-primary btn-large" data-toggle="modal" href="#stack1">View Demo</button>
-  				  </div>
-  				</div>
+          <div class="full-width" id="section-2" style="position: relative; overflow: hidden">
+            <h3>The Second Section: Get on your battlevest</h3>
+            <img src="img/zelda-corg.jpg">
+            <pre class="pre-scrollable prettyprint linenums" data-source="#full-width">
+            </pre>
+            <div class="text-center">
+            <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#full-width">View Demo</button>
+            </div>
+          </div>
+          <br />
 				  <br />
   				
           <!--<div class="dynamic">
@@ -85,43 +78,25 @@
   				</div>
           <br />-->
           
-  				<div class="ajax" style="position: relative; overflow: hidden">
-  				  <h3>AJAX (via jQuery.load)</h3>
-  				  <pre class="pre-scrollable prettyprint linenums" data-source="#ajax">
-  				  </pre>
-  				  <div class="text-center">
-  					<button class="demo btn btn-primary btn-large" data-toggle="modal">View Demo</button>
-  				  </div>
-  				</div>
-          <br />
-
-          <div class="static" style="position: relative; overflow: hidden">
-            <h3>Static Background with Animation</h3>
-            <p>The shake animation is included in bootstrap-modal but any animation in <a href="http://daneden.me/animate/">animate.css</a> is supported, just include the css file in your project.</p>
-            <pre class="pre-scrollable prettyprint linenums" data-source="#static">
+          <div class="full-width" id="section-3" style="position: relative; overflow: hidden">
+            <h3>The Third Section: Attack of the Corgi-Hydra</h3>
+            <img src="img/tri-corg.jpg">
+            <pre class="pre-scrollable prettyprint linenums" data-source="#full-width">
             </pre>
             <div class="text-center">
-            <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#static">View Demo</button>
+            <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#full-width">View Demo</button>
             </div>
           </div>
           <br />
-
-  				<div class="full-width" style="position: relative; overflow: hidden">
-  				  <h3>Full Width</h3>
-  				  <pre class="pre-scrollable prettyprint linenums" data-source="#full-width">
-  				  </pre>
-  				  <div class="text-center">
-  					<button class="demo btn btn-primary btn-large" data-toggle="modal" href="#full-width">View Demo</button>
-  				  </div>
-  				</div>
           <br />
 
-          <div class="long" style="position: relative; overflow: hidden">
-            <h3>Long Modals</h3>
-            <pre class="pre-scrollable prettyprint linenums" data-source="#long">
+          <div class="full-width" id="section-4" style="position: relative; overflow: hidden">
+            <h3>The Fourth and Last Section: Getting down to Business</h3>
+            <img src="img/blues-corg.jpg">
+            <pre class="pre-scrollable prettyprint linenums" data-source="#full-width">
             </pre>
             <div class="text-center">
-            <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#long">View Demo</button>
+            <button class="demo btn btn-primary btn-large" data-toggle="modal" href="#full-width">View Demo</button>
             </div>
           </div>
           <br />
